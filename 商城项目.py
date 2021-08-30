@@ -77,9 +77,9 @@ while True:
             print("该商品不存在！别瞎弄！请重新输入：")
         else:
             # 如果有该商品的优惠券 1使用优惠券 2看钱够不够
-            if a==0 and money < shop[chose][1]:
+            if a==1 and money < shop[chose][1]:
                 print("对不起，您的余额不足，穷鬼，请到其他地方购买！")
-            elif a==1 and money < ((shop[chose][1])*b):
+            elif a==0 and money < ((shop[chose][1])*b):
                 print("对不起，即使使用优惠券余额也不足")
             else:
                 if a==0:
