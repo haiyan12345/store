@@ -84,3 +84,4 @@ FROM t_employees GROUP BY deptno;
 -- 14. 查询每种工作的最高工资、最低工资、人数
 SELECT job,MIN(sal),MAX(sal),COUNT(empno)
 FROM t_employees GROUP BY job;
+
