@@ -4,9 +4,9 @@
 表：dept d, emp e
 条件：e.deptno=d.deptno
 */
-SELECT d.*, z1.cnt 
-FROM t_dept d, (SELECT deptno, COUNT(*) cnt FROM t_employees GROUP BY deptno) z1
-WHERE d.deptno = z1.deptno;
+SELECT d.*, t1.cnt 
+FROM t_dept d, (SELECT deptno, COUNT(*) cnt FROM t_employees GROUP BY deptno) t1
+WHERE d.deptno = t1.deptno;
 
 /*
 3. 列出所有员工的姓名及其直接上级的姓名。
